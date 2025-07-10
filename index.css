@@ -24,9 +24,10 @@ h1{
     color: #365b6d;
     position: absolute;
     top: 0;
-    width: 200px;
+    width: 300px;
     border-radius: 0 0 20px 0;
     opacity: 0.94;
+    font-size: 2.4rem;
 }
 img{
     width: 100%;
@@ -37,31 +38,65 @@ P{
     margin: 0;
     color: #365b6d;
     border-radius: 20px 0 20px 0;
-    width: 60%;
+    width: 70%;
     position: absolute;
-        bottom: 60%;
-    left: 10%;
+        bottom: 50%;
+        left: 10%;
+    font-size: 1.6rem;
 }
 .service-sec{
     background: #afc1d0;
      color: #365b6d;
      display: flex;
+     flex-direction: column;
      justify-content: space-evenly;
      align-items: center;
 }
 h2{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin: 0;
     padding: 1rem;
     text-align: center;
 }
 ul{
+    padding-left: 0;
     display: flex;
-    flex-direction: column;
     list-style-type: none;
     gap: 2rem;
     align-items: center;
+    font-size: 1.5rem;
+}
+.devider{
+    width: 3px;
+    height: 10vh;
+    background-color: #365b6d;
+}
+@media screen and (max-width: 600px) {
+    ul{
+        font-size: 1.2rem;
+        flex-wrap: wrap;
+    }
+    .first-sec, .second-sec{
+        text-align: center;
+    }
+    p{
+        font-size: 1.2rem;
+        bottom: 55%;
+        width: 60%;
+    }
+    h1{
+        width: 200px;
+        font-size: 2rem;
+    }
+    h2{
     font-size: 1.8rem;
+    padding-bottom: 0.2rem;
+    }
+    .contact-sec > h2{
+        font-size: 1.3rem;
+        padding-bottom: 0;
+    }
+    
 }
 .contact-sec{
     display: flex;
@@ -76,7 +111,7 @@ ul{
     padding: 1rem;
 }
 .website{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0;
-    padding: 1rem;
+    padding: 0.5rem 1rem 1rem 1rem;
 }
